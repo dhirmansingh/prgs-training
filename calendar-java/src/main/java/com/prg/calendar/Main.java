@@ -1,4 +1,4 @@
-package com.prg.calender;
+package com.prg.calendar;
 
 public class Main {
 	static public void main(String[] args) {

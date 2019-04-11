@@ -1,4 +1,4 @@
-package com.prg.calender;
+package com.prg.calendar;
 
 public class Events {
 	void getEventPresetDay() {
