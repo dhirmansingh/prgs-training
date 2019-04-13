@@ -6,10 +6,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.prg.calendar.SystemDate;
 
-@Controller
+@RestController
 public class CalendarController {
 	
     @GetMapping("/greeting")
@@ -18,11 +19,11 @@ public class CalendarController {
         return "greeting";
     }      
 
-    @GetMapping("/date")//calender
+    @GetMapping("/calendar")//calender
     public String date(Model model) {
     	
     	SystemDate systemDate= new SystemDate();
-    	Date todaysDate=systemDate.getPresentDate;
+    	Date todaysDate=systemDate.getPresentDate();
     	//Date type declarsation inline and assignment.
         model.addAttribute("todaysDate", todaysDate);
         

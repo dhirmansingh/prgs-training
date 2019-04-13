@@ -3,9 +3,8 @@ package com.prg.calendar;
 import java.util.Date;
 
 public class SystemDate {
-	public Date getPresentDate;
-
-	Date getPresentDate() {
+	
+	public Date getPresentDate() {
 	//we change it from void to Date 	 
 		 
 		System.out.println("SystemDate :getPresentDate START");
